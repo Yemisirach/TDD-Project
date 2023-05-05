@@ -12,8 +12,13 @@ describe Solver do
   end
 
     describe 'factorial method' do
-      it 'shoul retur 120 when a num of 5 is passed as an argument' do
+    it 'shoul retur 120 when a num of 5 is passed as an argument' do
       expect(@solver.factorial(5)).to be(120)
+    end
+      it 'shoul raise error when a num of -1 is passed as an argument' do
+      # expect().to raise_error()
+      expect{@solver.factorial(-1)}.to raise_error(ArgumentError)
+ 
     end
     end
 
