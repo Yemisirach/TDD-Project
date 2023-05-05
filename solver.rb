@@ -1,11 +1,11 @@
 class Solver
-  def factorial(n)
-    if n.negative?
+  def factorial(num)
+    if num.negative?
       raise ArgumentError, 'factorial is not defined for negative numbers'
-    elsif n.zero?
+    elsif num.zero?
       1
     else
-      n * factorial(n - 1)
+      num * factorial(num - 1)
     end
   end
 
@@ -13,15 +13,15 @@ class Solver
     str.reverse
   end
 
-  def fizzbuzz(n)
-    if (n % 3).zero? && (n % 5).zero?
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
       'fizzbuzz'
-    elsif (n % 3).zero?
+    elsif (num % 3).zero?
       'fizz'
-    elsif (n % 5).zero?
+    elsif (num % 5).zero?
       'buzz'
     else
-      n.to_s
+      num.to_s
     end
   end
 end
