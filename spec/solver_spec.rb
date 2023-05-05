@@ -11,4 +11,10 @@ describe Solver do
     end
   end
 
+    describe 'factorial method' do
+      it 'shoul retur 120 when a num of 5 is passed as an argument' do
+      expect(@solver.factorial(5)).to be(120)
+    end
+    end
+
 end
