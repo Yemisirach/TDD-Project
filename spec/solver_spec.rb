@@ -1,6 +1,6 @@
-require_relative './solver'
+require_relative '../solver'
 
-describe Book do
+describe Solver do
   before(:each) do
       @solver = Solver.new
   end
