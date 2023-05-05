@@ -28,4 +28,25 @@ describe Solver do
       expect(@solver.reverse_string("lol")).to eq("lol")
     end
     end
+  describe '#fizzbuzz' do
+  it 'returns "fizz" when the number is divisible by 3' do
+    expect(@solver.fizzbuzz(3)).to eq('fizz')
+    expect(@solver.fizzbuzz(9)).to eq('fizz')
+  end
+
+  it 'returns "buzz" when the number is divisible by 5' do
+    expect(@solver.fizzbuzz(5)).to eq('buzz')
+    expect(@solver.fizzbuzz(20)).to eq('buzz')
+  end
+
+  it 'returns "fizzbuzz" when the number is divisible by 3 and 5' do
+    expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+    expect(@solver.fizzbuzz(30)).to eq('fizzbuzz')
+  end
+
+  it 'returns the number as a string when not divisible by 3 or 5' do
+    expect(@solver.fizzbuzz(2)).to eq('2')
+    expect(@solver.fizzbuzz(7)).to eq('7')
+  end
+end
 end
