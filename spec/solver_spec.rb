@@ -5,7 +5,7 @@ describe Solver do
       @solver = Solver.new
   end
 
-  describe 'book' do
+  describe 'Solver' do
     it 'checks if its an instance of Solver' do
       expect(@solver).to be_an_instance_of(Solver)
     end
@@ -16,10 +16,16 @@ describe Solver do
       expect(@solver.factorial(5)).to be(120)
     end
       it 'shoul raise error when a num of -1 is passed as an argument' do
-      # expect().to raise_error()
       expect{@solver.factorial(-1)}.to raise_error(ArgumentError)
  
     end
     end
-
+    describe 'reverse method' do
+      it 'should reverse hello to olleh'do
+      expect(@solver.reverse("hello")).to be("olleh")
+    end
+     it 'should reverse lol to lol 'do
+      expect(@solver.reverse("lol")).to be("lol")
+    end
+    end
 end
