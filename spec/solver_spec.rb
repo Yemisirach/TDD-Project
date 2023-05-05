@@ -22,10 +22,10 @@ describe Solver do
     end
     describe 'reverse method' do
       it 'should reverse hello to olleh'do
-      expect(@solver.reverse_string("hello")).to be("olleh")
+      expect(@solver.reverse_string("hello")).to eq("olleh")
     end
      it 'should reverse lol to lol 'do
-      expect(@solver.reverse_string("lol")).to be("lol")
+      expect(@solver.reverse_string("lol")).to eq("lol")
     end
     end
 end
