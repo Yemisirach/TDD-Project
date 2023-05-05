@@ -1,7 +1,11 @@
 class Solver
- def factorial(num)
-    return 1 if num.zero?
-
-    num * factorial(num - 1)
+ def factorial(n)
+    if n < 0
+    raise ArgumentError, "factorial is not defined for negative numbers"
+  elsif n == 0
+    return 1
+  else
+    return n * factorial(n-1)
   end
+end
 end
