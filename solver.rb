@@ -9,6 +9,9 @@ class Solver
   end
 end
 
+def reverse_string(str)
+  str.reverse
+end
 
 
 end
